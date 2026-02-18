@@ -21,7 +21,7 @@ modules:
     repos:
       files: 
         - https://cli.github.com/packages/rpm/gh-cli.repo
-        - https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/rpms
+        - codium.repo
       copr:
         - atim/starship
     install:
