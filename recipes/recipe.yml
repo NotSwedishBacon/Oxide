@@ -52,7 +52,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - adwaita-mono
+        - AdwaitaMono
       
   - type: initramfs # Regen initramfs to enable GuC/HuC
   
