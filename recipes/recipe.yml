@@ -16,6 +16,11 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  
+  - type: kargs
+    kargs:
+      - i915.enable_guc=2
+      - i915.enable_fbc=1
 
   - type: dnf
     repos:
