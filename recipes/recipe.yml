@@ -29,7 +29,6 @@ modules:
         - micro
         - starship
         - fastfetch
-        - distrobox 
         - gh
         - codium
     remove:
@@ -46,8 +45,14 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
-          - org.gnome.Loupe
       - scope: user # Also add Flathub user repo, but no user packages
+        install:
+          - com.discordapp.Discord
+  
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - AdwaitaMono
       
   - type: initramfs # Regen initramfs to enable GuC/HuC
   
