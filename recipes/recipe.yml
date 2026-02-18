@@ -29,6 +29,7 @@ modules:
         - codium.repo
       copr:
         - atim/starship
+        - kordus/cosmic-applets 
     install:
       packages:
         - micro
@@ -36,6 +37,7 @@ modules:
         - fastfetch
         - gh
         - codium
+        - cosmic-ext-applet-clipboard-manager
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -53,6 +55,19 @@ modules:
       - scope: user # Also add Flathub user repo, but no user packages
         install:
           - com.discordapp.Discord
+          - org.telegram.desktop
+          - org.videolan.VLC
+          - com.github.tchx84.Flatseal
+          - org.gimp.GIMP
+          - io.github.flattool.Warehouse
+          - org.libreoffice.LibreOffice
+          - io.missioncenter.MissionCenter
+          - org.localsend.localsend_app
+          - org.mozilla.Thunderbird
+          - org.inkscape.Inkscape
+          - com.ranfdev.DistroShelf
+          - com.prusa3d.PrusaSlicer
+          - io.github.shiftey.Desktop
   
   - type: fonts
     fonts:
