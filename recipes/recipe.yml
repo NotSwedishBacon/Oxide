@@ -21,6 +21,7 @@ modules:
     repos:
       files: 
         - https://cli.github.com/packages/rpm/gh-cli.repo
+        - codium.repo
       copr:
         - atim/starship
     install:
@@ -29,9 +30,8 @@ modules:
         - starship
         - fastfetch
         - distrobox 
-        - repo: gh-cli
-          packages: 
-            - gh
+        - gh
+        - codium
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
