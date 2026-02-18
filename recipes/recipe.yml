@@ -19,12 +19,19 @@ modules:
 
   - type: dnf
     repos:
+      files: 
+        - https://cli.github.com/packages/rpm/gh-cli.repo
       copr:
         - atim/starship
     install:
       packages:
         - micro
         - starship
+        - fastfetch
+        - distrobox 
+        - repo: gh-cli
+          packages: 
+            - gh
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
