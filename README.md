@@ -31,17 +31,3 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/notswedishbacon/oxide
 ```
-
-## Cosmic App Icons
-
-To fix cosmic app icons, you may need to update the icon cache. If you have a fresh ISO install, first create the hicolor folder:
-
-```bash
-mkdir -p ~/.local/share/icons/hicolor
-```
-
-Then update the icon cache and reboot:
-
-```bash
-gtk-update-icon-cache -f -t ~/.local/share/icons/hicolor
-```
